@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity" >
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity" />
+
+    <RadioGroup
+        android:id="@+id/radio_group_list_selector"
+        android:layout_width="137dp"
+        android:layout_height="145dp"
+        android:background="#80000000"
+        android:orientation="vertical"
+        android:padding="4dp">
+
+        <Button
+            android:id="@+id/button_reload_markers"
+            android:layout_width="124dp"
+            android:layout_height="67dp"
+            android:layout_gravity="left|top"
+            android:layout_marginTop="0dp"
+            android:padding="0dp"
+            android:paddingRight="10dp"
+            android:text="Start course" />
+
+        <Button
+            android:id="@+id/button_get_closest_directions"
+            android:layout_width="125dp"
+            android:layout_height="67dp"
+            android:layout_gravity="left|top"
+            android:layout_marginTop="0dp"
+            android:baselineAligned="false"
+            android:padding="0dp"
+            android:paddingRight="10dp"
+            android:text="Get Directions to closest Service Point" />
+
+
+    </RadioGroup>
+</FrameLayout>
